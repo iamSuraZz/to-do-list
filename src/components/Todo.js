@@ -8,18 +8,19 @@ const Todo = () => {
   const list = useSelector((state)=>state.todoReducers.list)
   const dispatch = useDispatch();
   return (
-  <>
+ 
+ <>
 
   <div className="child-div">
 <h1 style={{textAlign : "center"}}>Add your to-do-list here</h1>
-    <div className=" addItems" style={{textAlign : "center"}} className="addItems">
+    <div className=" addItems" style={{textAlign : "center"}} >
       <input  type='text' placeholder='Add your text..' value={inputData}
       onChange={(event)=>setInputData(event.target.value)}/>
       <i class="fas fa-plus" onClick={()=> dispatch(addTodo(inputData),
         setInputData('')) }></i>
-        <div className="showItems">
-          
-            
+       
+       
+        <div className="showItems"> 
             {
                 list.map((elem)=>{
                   return(
