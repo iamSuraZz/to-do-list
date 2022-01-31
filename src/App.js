@@ -1,11 +1,13 @@
 import React from 'react';
+import Todo from './components/Todo';
 
 const App = () => {
-  return (<div> 
+  return (
+  <div> 
 
-    <h1>This is a test assessment.</h1>
-
-  </div>)
+<Todo />
+  </div>
+  )
 };
 
 export default App;
